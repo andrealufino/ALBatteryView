@@ -18,7 +18,8 @@
 {
     [super viewDidLoad];
     
-    ALBatteryView *batteryView = [[ALBatteryView alloc] initWithFrame:CGRectMake(20, 40, 80, 80)];
+    ALBatteryView *batteryView = [[ALBatteryView alloc] initWithFrame:CGRectMake(20, 40, 128, 128)];
+    [batteryView setCenter:self.view.center];
     [self.view addSubview:batteryView];
     [batteryView setBatteryLevelWithAnimation:YES forValue:[UIDevice currentDevice].batteryLevelInPercentage inPercent:YES];
 }
