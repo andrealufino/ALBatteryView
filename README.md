@@ -6,6 +6,7 @@ The color of the fill view depends by the battery level.
 
 #Usage
 The usage is simple.
+First, drag the ALBatteryView folder to your project. The folder contains ALBatteryView.h, ALBatteryView.m, Resource folder with the battery image and the UIView+ALQuickFrame category (http://github.com/andrealufino/ALQuickFrame).
 
 	ALBatteryView *batteryView = [[ALBatteryView alloc] initWithFrame:CGRectMake(20, 40, 80, 80)];
     [self.view addSubview:batteryView];
