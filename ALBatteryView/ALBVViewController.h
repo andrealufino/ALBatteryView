@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ALBatteryView.h"
 
 @interface ALBVViewController : UIViewController
 

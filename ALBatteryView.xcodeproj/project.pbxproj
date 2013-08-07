@@ -18,6 +18,10 @@
 		870F432417B196980074D5B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 870F432317B196980074D5B7 /* Default-568h@2x.png */; };
 		870F432717B196980074D5B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F432517B196980074D5B7 /* MainStoryboard.storyboard */; };
 		870F432A17B196980074D5B7 /* ALBVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870F432917B196980074D5B7 /* ALBVViewController.m */; };
+		870F434617B1973A0074D5B7 /* ALBatteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 870F433F17B1973A0074D5B7 /* ALBatteryView.m */; };
+		870F434717B1973A0074D5B7 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 870F434117B1973A0074D5B7 /* battery.png */; };
+		870F434817B1973A0074D5B7 /* battery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 870F434217B1973A0074D5B7 /* battery@2x.png */; };
+		870F434917B1973A0074D5B7 /* UIView+ALQuickFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 870F434517B1973A0074D5B7 /* UIView+ALQuickFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,12 @@
 		870F432617B196980074D5B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		870F432817B196980074D5B7 /* ALBVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALBVViewController.h; sourceTree = "<group>"; };
 		870F432917B196980074D5B7 /* ALBVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALBVViewController.m; sourceTree = "<group>"; };
+		870F433E17B1973A0074D5B7 /* ALBatteryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBatteryView.h; sourceTree = "<group>"; };
+		870F433F17B1973A0074D5B7 /* ALBatteryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALBatteryView.m; sourceTree = "<group>"; };
+		870F434117B1973A0074D5B7 /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battery.png; sourceTree = "<group>"; };
+		870F434217B1973A0074D5B7 /* battery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery@2x.png"; sourceTree = "<group>"; };
+		870F434417B1973A0074D5B7 /* UIView+ALQuickFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ALQuickFrame.h"; sourceTree = "<group>"; };
+		870F434517B1973A0074D5B7 /* UIView+ALQuickFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ALQuickFrame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				870F431317B196980074D5B7 /* ALBatteryView */,
+				870F433317B196BA0074D5B7 /* Resources */,
+				870F431417B196980074D5B7 /* Supporting Files */,
 				870F430C17B196980074D5B7 /* Frameworks */,
 				870F430B17B196980074D5B7 /* Products */,
 			);
@@ -83,12 +95,7 @@
 		870F431317B196980074D5B7 /* ALBatteryView */ = {
 			isa = PBXGroup;
 			children = (
-				870F431C17B196980074D5B7 /* ALBVAppDelegate.h */,
-				870F431D17B196980074D5B7 /* ALBVAppDelegate.m */,
-				870F432517B196980074D5B7 /* MainStoryboard.storyboard */,
-				870F432817B196980074D5B7 /* ALBVViewController.h */,
-				870F432917B196980074D5B7 /* ALBVViewController.m */,
-				870F431417B196980074D5B7 /* Supporting Files */,
+				870F433017B196A00074D5B7 /* Classes */,
 			);
 			path = ALBatteryView;
 			sourceTree = "<group>";
@@ -105,6 +112,73 @@
 				870F432317B196980074D5B7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = ALBatteryView;
+			sourceTree = "<group>";
+		};
+		870F433017B196A00074D5B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				870F433117B196A80074D5B7 /* AppDelegate */,
+				870F433217B196B40074D5B7 /* Main */,
+				870F433D17B1973A0074D5B7 /* ALBatteryView */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		870F433117B196A80074D5B7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				870F431C17B196980074D5B7 /* ALBVAppDelegate.h */,
+				870F431D17B196980074D5B7 /* ALBVAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		870F433217B196B40074D5B7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				870F432817B196980074D5B7 /* ALBVViewController.h */,
+				870F432917B196980074D5B7 /* ALBVViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		870F433317B196BA0074D5B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				870F432517B196980074D5B7 /* MainStoryboard.storyboard */,
+			);
+			name = Resources;
+			path = ALBatteryView;
+			sourceTree = "<group>";
+		};
+		870F433D17B1973A0074D5B7 /* ALBatteryView */ = {
+			isa = PBXGroup;
+			children = (
+				870F433E17B1973A0074D5B7 /* ALBatteryView.h */,
+				870F433F17B1973A0074D5B7 /* ALBatteryView.m */,
+				870F434317B1973A0074D5B7 /* UIView+ALQuickFrame */,
+				870F434017B1973A0074D5B7 /* Resources */,
+			);
+			path = ALBatteryView;
+			sourceTree = "<group>";
+		};
+		870F434017B1973A0074D5B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				870F434117B1973A0074D5B7 /* battery.png */,
+				870F434217B1973A0074D5B7 /* battery@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		870F434317B1973A0074D5B7 /* UIView+ALQuickFrame */ = {
+			isa = PBXGroup;
+			children = (
+				870F434417B1973A0074D5B7 /* UIView+ALQuickFrame.h */,
+				870F434517B1973A0074D5B7 /* UIView+ALQuickFrame.m */,
+			);
+			path = "UIView+ALQuickFrame";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +238,8 @@
 				870F432217B196980074D5B7 /* Default@2x.png in Resources */,
 				870F432417B196980074D5B7 /* Default-568h@2x.png in Resources */,
 				870F432717B196980074D5B7 /* MainStoryboard.storyboard in Resources */,
+				870F434717B1973A0074D5B7 /* battery.png in Resources */,
+				870F434817B1973A0074D5B7 /* battery@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +253,8 @@
 				870F431A17B196980074D5B7 /* main.m in Sources */,
 				870F431E17B196980074D5B7 /* ALBVAppDelegate.m in Sources */,
 				870F432A17B196980074D5B7 /* ALBVViewController.m in Sources */,
+				870F434617B1973A0074D5B7 /* ALBatteryView.m in Sources */,
+				870F434917B1973A0074D5B7 /* UIView+ALQuickFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +342,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALBatteryView/ALBatteryView-Prefix.pch";
 				INFOPLIST_FILE = "ALBatteryView/ALBatteryView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,10 +351,15 @@
 		870F432F17B196980074D5B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrea Lufino (EZ9L78NW47)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrea Lufino (EZ9L78NW47)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALBatteryView/ALBatteryView-Prefix.pch";
 				INFOPLIST_FILE = "ALBatteryView/ALBatteryView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "79F565A5-B4CC-4F05-A143-07A990F1B85B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "79F565A5-B4CC-4F05-A143-07A990F1B85B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
