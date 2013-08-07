@@ -17,7 +17,7 @@ This will animate the view filling the battery
 
 #Limitation
 The battery view can be maximum 128x128 (width, height), this is because the png is 256x256 pixels.
-The battery view **have** to be a square, so the width and the height **have** to be the same.
+The battery view **has** to be a square, so the width and the height **have** to be the same.
 
 #License
 Licesed under the MIT License.
