@@ -99,6 +99,13 @@
         batteryFill.width = newWidth;
 }
 
+- (void)reload {
+    // Reset the width of the fill view
+    batteryFill.width = 0.0f;
+    // Set the fill of the view to redo the animation
+    [self setBatteryLevelWithAnimation:YES forValue:[UIDevice currentDevice].batteryLevelInPercentage inPercent:YES];
+}
+
 #pragma mark - Private method
 
 // Returns an UIColor object based on the passed battery level

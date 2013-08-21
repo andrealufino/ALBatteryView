@@ -46,4 +46,9 @@
  */
 - (void)setBatteryLevelWithAnimation:(BOOL)isAnimated forValue:(CGFloat)batteryLevel inPercent:(BOOL)inPercent;
 
+/*!
+ Reload the animation which fill the battery view with the current battery level
+ */
+- (void)reload;
+
 @end
